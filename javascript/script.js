@@ -123,5 +123,6 @@ icon.onclick = function() {
         icon.src = "../images/sun-solid-24.png";
     } else {
         icon.src = "../images/moon-solid-24.png";
+        icon.currentSrc = "../images/moon-solid-24.png";
     }
 }
