@@ -120,8 +120,8 @@ var icon = document.getElementById('dark-icon');
 icon.onclick = function() {
     document.body.classList.toggle('dark-theme');
     if(document.body.classList.contains('dark-theme')) {
-        icon.src = "../images/sun-solid-24.png";
+        icon.src = "/images/sun-solid-24.png";
     } else {
-        icon.src = "../images/moon-solid-24.png";
+        icon.src = "/images/moon-solid-24.png";
     }
 }
