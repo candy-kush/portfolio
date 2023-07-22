@@ -23,6 +23,18 @@
     --icon-color: #f2f4e2;
 }
 
+.light-theme {
+    --bg-color: #f2f4e2 ;
+    --second-bg-color: rgb(235, 153, 0);
+    --text-color: black ;
+    --main-color: black ;
+    --project-color: rgb(0, 181, 222);
+    --btn-color: #000000;
+    --second-btn-color: black;
+    --read-more-color: white;
+    --icon-color: #f2f4e2;
+}
+
 .dark-theme {
     --bg-color: #000000 ;
     --second-bg-color: rgb(235, 153, 0);
@@ -142,7 +154,7 @@ section {
     height: 2.4rem;
     width: 2.4rem;
     margin-left: 4rem;
-    background-color: var(--icon-color);
+    font-size: 20px;
 }
 
 .multiple-text {
