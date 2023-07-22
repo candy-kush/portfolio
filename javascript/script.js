@@ -116,13 +116,15 @@ function sendEmail() {
 }
 
 var icon = document.getElementById('dark-icon');
+const btn = document.querySelector(".btn-mode");
 
-icon.onclick = function() {
-    document.body.classList.toggle('dark-theme');
-    if(document.body.classList.contains('dark-theme')) {
-        icon.src = "../images/sun-solid-24.png";
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+btn.addEventListener("click", function() {
+    if (prefersDarkScheme.matches) {
+        document.body.classList.toggle("light-theme");
     } else {
-        icon.src = "../images/moon-solid-24.png";
-        icon.currentSrc = "../images/moon-solid-24.png";
+        document.body.classList.toggle("dark-theme");
     }
-}
+    icon.classList.toggle("fa-moon-o");
+    icon.classList.toggle("fa-sun-o");
+});
